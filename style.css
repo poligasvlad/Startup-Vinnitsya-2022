@@ -2232,7 +2232,8 @@ ul.linear-list li {
     display: flex;
     align-items: center;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    height: 300px; }
 
 #news {
   position: relative;
