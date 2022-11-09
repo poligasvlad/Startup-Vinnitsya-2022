@@ -36,6 +36,13 @@
         border-bottom-left-radius: 50px 50px;
     }
 }
+@media screen and (max-width: 980px) {
+.welcome{
+    .welcome-block-img{
+        display: none;
+    }
+}
+}
 
 #about{
     padding-top: 150px;
@@ -104,4 +111,8 @@
             display: none;
         }
     }
+}
+
+@media screen and (max-width: 980px) {
+
 }

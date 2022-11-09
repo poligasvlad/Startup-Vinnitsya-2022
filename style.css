@@ -2065,6 +2065,9 @@ ul.linear-list li {
     border-top-left-radius: 200px 200px;
     border-bottom-left-radius: 50px 50px; }
 
+@media screen and (max-width: 980px) {
+  .welcome .welcome-block-img {
+    display: none; } }
 #about {
   padding-top: 150px; }
   #about .about-title {
