@@ -13,10 +13,12 @@
     }
     button{
         @include font('Rubik', normal, 400, 20px, 24px);
+        @include centering;
         height: 65px;
         max-width: 289px;
         border: none;
         border-radius: 15px;
+        padding: 10px
     }
     .driver-btn{
         @include green-btn;

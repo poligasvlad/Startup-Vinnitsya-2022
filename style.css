@@ -2043,10 +2043,15 @@ ul.linear-list li {
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: center;
     height: 65px;
     max-width: 289px;
     border: none;
-    border-radius: 15px; }
+    border-radius: 15px;
+    padding: 10px; }
   .welcome .driver-btn {
     background-color: #27AE60;
     color: #FFFFFF; }
