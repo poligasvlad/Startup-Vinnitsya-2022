@@ -2094,7 +2094,8 @@ ul.linear-list li {
     margin-bottom: 60px; }
   #about .about__card {
     justify-content: space-around;
-    list-style-type: none; }
+    list-style-type: none;
+    padding: 0; }
     #about .about__card--item {
       position: relative;
       display: flex;
@@ -2171,7 +2172,8 @@ ul.linear-list li {
     margin-bottom: 60px; }
   #collection .collection-list {
     justify-content: space-around;
-    list-style-type: none; }
+    list-style-type: none;
+    padding: 0; }
     #collection .collection-list--item {
       width: 16%;
       padding: 10px;

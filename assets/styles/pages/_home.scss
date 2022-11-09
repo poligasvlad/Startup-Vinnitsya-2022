@@ -65,6 +65,7 @@
     .about__card{
         justify-content: space-around;
         list-style-type: none;
+        padding: 0;
         &--item{
             position: relative;
             @include centering;
@@ -145,6 +146,7 @@
     .collection-list{
         justify-content: space-around;
         list-style-type: none;
+        padding: 0;
         &--item{
             width: 16%;
             padding: 10px;
