@@ -188,3 +188,69 @@
         }
     }
 }
+
+#map{
+    padding: 150px 0px;
+    .map-title{
+        @include font('Rubik', normal, 500, 48px, 57px);
+    }
+    .map-subtitle{
+        @include font('Rubik', normal, 400, 16px, 19px);
+        margin-bottom: 60px;
+    }
+    .map-wrapper{
+        @include centering;
+    }
+}
+
+#news{
+    position: relative;
+    background-image: url(/assets/images/news/news-bg.png);
+    padding: 100px 90px;
+    display: flex;
+    justify-content: space-around;
+    .news__video{
+        z-index: 2;
+    }
+    .news__text-block{
+        width: 40%;
+        z-index: 2;
+        &--title{
+            @include font('Rubik', normal, 500, 40px, 47px);
+            color: $white-text-color;
+        }
+        &--top{
+            @include font('Rubik', normal, 400, 16px, 19px);
+            color: $white-text-color;
+        }
+        &--bottom{
+            @include font('Rubik', normal, 400, 16px, 19px);
+            color: $white-text-color;
+        }
+    }
+    .darkening {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        background: linear-gradient(85.97deg, rgba(0, 0, 0, 0.3) 38.34%, #000000 86.55%);
+    }
+}
+@media screen and (max-width: 1024px) {
+    #news{
+        padding: 60px 20px;
+        flex-wrap: wrap-reverse;
+        .news__video{
+            width: 80%;
+        }
+        .news__text-block{
+            width: 80%;
+            margin-bottom: 30px;
+            &--title{
+                text-align: center;
+            }
+        }
+    }
+}

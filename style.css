@@ -2213,6 +2213,79 @@ ul.linear-list li {
       .collection-list--item span {
         padding: 0px 7px !important;
         width: 100%; } }
+#map {
+  padding: 150px 0px; }
+  #map .map-title {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 57px; }
+  #map .map-subtitle {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 60px; }
+  #map .map-wrapper {
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: center; }
+
+#news {
+  position: relative;
+  background-image: url(/assets/images/news/news-bg.png);
+  padding: 100px 90px;
+  display: flex;
+  justify-content: space-around; }
+  #news .news__video {
+    z-index: 2; }
+  #news .news__text-block {
+    width: 40%;
+    z-index: 2; }
+    #news .news__text-block--title {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 47px;
+      color: #FFFFFF; }
+    #news .news__text-block--top {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #FFFFFF; }
+    #news .news__text-block--bottom {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #FFFFFF; }
+  #news .darkening {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background: linear-gradient(85.97deg, rgba(0, 0, 0, 0.3) 38.34%, #000000 86.55%); }
+
+@media screen and (max-width: 1024px) {
+  #news {
+    padding: 60px 20px;
+    flex-wrap: wrap-reverse; }
+    #news .news__video {
+      width: 80%; }
+    #news .news__text-block {
+      width: 80%;
+      margin-bottom: 30px; }
+      #news .news__text-block--title {
+        text-align: center; } }
 /**
  * ---------------------------------------------------
  * 	5.  Themes
