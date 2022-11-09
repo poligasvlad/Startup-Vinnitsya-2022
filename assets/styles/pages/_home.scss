@@ -1,0 +1,107 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+.welcome{
+    padding-top: 120px;
+    position: relative;
+    h1{
+        @include font('Rubik', normal, 500, 48px, 57px);
+    }
+    span{
+        @include font('Rubik', normal, 400, 24px, 28px);
+        color: $grey-text-color;
+    }
+    button{
+        @include font('Rubik', normal, 400, 20px, 24px);
+        height: 65px;
+        max-width: 289px;
+        border: none;
+        border-radius: 15px;
+    }
+    .driver-btn{
+        @include green-btn;
+    }
+    .operator-btn{
+        @include white-btn;
+    }
+    .welcome-block-img{
+        background-image: url(assets/images/welcome-block/welcome-block-img.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 43%;
+        height: 445px;
+        top: 50px;
+        right: 0;
+        border-top-left-radius: 200px 200px;
+        border-bottom-left-radius: 50px 50px;
+    }
+}
+
+#about{
+    padding-top: 150px;
+    .about-title{
+        @include font('Rubik', normal, 500, 48px, 57px);
+    }
+    .about-subtitle{
+        @include font('Rubik', normal, 400, 16px, 19px);
+        margin-bottom: 60px;
+    }
+    .about__card{
+        justify-content: space-around;
+        list-style-type: none;
+        &--item{
+            position: relative;
+            @include centering;
+            padding: 40px 20px;
+            width: 23%;
+            max-width: 289px;
+            max-height: 289px;
+            background-repeat: no-repeat;
+            border-radius: 15px;
+            .item-wrapper{
+                @include horizontal-centering;
+                flex-wrap: wrap;  
+            }
+            span{
+                @include font('Rubik', normal, 700, 64px, 76px);
+                color: $white-text-color;
+                z-index: 2;
+            }
+            p{
+                @include font('Rubik', normal, 500, 20px, 24px);
+                color: $white-text-color;
+                text-align: center;
+                width: 100%;
+                z-index: 2;
+            }
+            .eclipse{
+                position: absolute;
+                z-index: 1;
+                background: black;
+                opacity: 0.7;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 15px;
+            }
+
+        }
+        &--item:first-child{
+            background-image: url(/assets/images/about/image1.svg);
+        }
+        &--item:nth-child(2){
+            background-image: url(/assets/images/about/image2.svg);
+        }
+        &--item:nth-child(3){
+            background-image: url(/assets/images/about/image3.svg);
+        }
+        &--item:nth-child(4){
+            background-image: url(/assets/images/about/image4.svg);
+        }
+
+        &--item:hover .item-wrapper{
+            display: none;
+        }
+    }
+}

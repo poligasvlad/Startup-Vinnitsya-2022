@@ -1,0 +1,15 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+@mixin vertical-centering{
+  display: flex;
+  align-items: center;
+}
+@mixin horizontal-centering{
+  display: flex;
+  justify-content: center;
+}
+@mixin centering {
+  @include vertical-centering;
+  @include horizontal-centering;
+}

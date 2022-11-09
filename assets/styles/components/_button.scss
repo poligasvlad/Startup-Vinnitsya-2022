@@ -1,0 +1,12 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+@mixin green-btn {
+    background-color:$green-bg-color;
+    color: $white-text-color;
+}
+@mixin white-btn {
+    background-color: $white-bg-color;
+    color: $green-text-color;
+    border: 1px solid #D3D3D3 !important;
+}

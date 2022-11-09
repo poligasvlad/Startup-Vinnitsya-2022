@@ -1,0 +1,13 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+// Font mixins
+@mixin font($family, $style, $weight, $size, $line-height) {
+	font-family: $family;
+	font-style: $style;
+	font-weight: $weight;
+	font-size: $size;
+	line-height: $line-height;
+  }

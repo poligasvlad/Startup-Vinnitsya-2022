@@ -1,0 +1,44 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+
+.navbar{
+    background-color: $white-bg-color;
+    border-bottom: 1px solid #DFDFE0;
+    .search{
+        @include vertical-centering;
+        background-color: $grey-bg-color;
+        border-radius: 30px;
+        height: 48px;
+        width: 162px;
+        padding: 0px 20px 0px 20px;
+        input{
+            border: none;
+            background-color: inherit;
+            border-radius: 30px;
+            outline: none;
+        }
+    }
+    .navbar-nav{
+        .nav-item{
+            @include font('Rubik', normal, 400, 14px, 17px);
+            margin-right: 20px;
+        }
+    }
+    .question{
+        @include vertical-centering;
+        span{
+            @include font('Rubik', normal, 400, 12px, 14px);
+            color: $grey-text-color;
+        }
+        a{
+            @include font('Rubik', normal, 600, 17px, 21px);
+            color: $green-text-color;
+        }
+    }
+    .login{
+        padding: 0px;
+    }
+}
+
