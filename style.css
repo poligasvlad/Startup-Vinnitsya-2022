@@ -2154,6 +2154,58 @@ ul.linear-list li {
     margin-bottom: 15px; }
   .about__card--item:nth-child(2) {
     margin-bottom: 15px; } }
+#collection {
+  padding-top: 150px; }
+  #collection .collection-title {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 57px; }
+  #collection .collection-subtitle {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 60px; }
+  #collection .collection-list {
+    justify-content: space-around;
+    list-style-type: none; }
+    #collection .collection-list--item {
+      width: 16%;
+      padding: 10px;
+      display: flex;
+      justify-content: center; }
+      #collection .collection-list--item img {
+        height: 590px;
+        margin: 0;
+        margin-bottom: 30px; }
+      #collection .collection-list--item span {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        color: #219653;
+        border: 2px solid #219653;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        padding: 5px 0px; }
+
+@media screen and (max-width: 768px) {
+  .collection-list {
+    justify-content: space-around;
+    list-style-type: none;
+    flex-wrap: wrap; }
+    .collection-list--item {
+      width: 33% !important; }
+      .collection-list--item img {
+        height: 300px !important;
+        margin-bottom: 15px !important; }
+      .collection-list--item span {
+        padding: 0px 7px !important;
+        width: 100%; } }
 /**
  * ---------------------------------------------------
  * 	5.  Themes
