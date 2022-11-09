@@ -2067,7 +2067,16 @@ ul.linear-list li {
 
 @media screen and (max-width: 990px) {
   .welcome .welcome-block-img {
-    display: none; } }
+    display: none; }
+
+  h1 {
+    text-align: center; }
+
+  span {
+    text-align: center; }
+
+  .btn-wrapper {
+    justify-content: center; } }
 #about {
   padding-top: 150px; }
   #about .about-title {
@@ -2093,7 +2102,6 @@ ul.linear-list li {
       display: flex;
       justify-content: center;
       padding: 40px 20px;
-      width: 23%;
       max-width: 289px;
       max-height: 289px;
       background-repeat: no-repeat;
@@ -2141,6 +2149,11 @@ ul.linear-list li {
     #about .about__card--item:hover .item-wrapper {
       display: none; }
 
+@media screen and (max-width: 768px) {
+  .about__card--item:first-child {
+    margin-bottom: 15px; }
+  .about__card--item:nth-child(2) {
+    margin-bottom: 15px; } }
 /**
  * ---------------------------------------------------
  * 	5.  Themes

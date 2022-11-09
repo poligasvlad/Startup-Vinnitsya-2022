@@ -37,11 +37,20 @@
     }
 }
 @media screen and (max-width: 990px) {
-.welcome{
-    .welcome-block-img{
-        display: none;
+    .welcome{
+        .welcome-block-img{
+            display: none;
+        }
     }
-}
+    h1{
+        text-align: center;
+    }
+    span{
+        text-align: center;
+    }
+    .btn-wrapper{
+        justify-content: center;
+    }
 }
 
 #about{
@@ -60,7 +69,6 @@
             position: relative;
             @include centering;
             padding: 40px 20px;
-            width: 23%;
             max-width: 289px;
             max-height: 289px;
             background-repeat: no-repeat;
@@ -113,6 +121,13 @@
     }
 }
 
-@media screen and (max-width: 980px) {
-
+@media screen and (max-width: 768px) {
+    .about__card{
+        &--item:first-child{
+            margin-bottom: 15px;
+        }
+        &--item:nth-child(2){
+            margin-bottom: 15px;
+        }
+    }
 }
